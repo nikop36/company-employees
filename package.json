@@ -1,0 +1,30 @@
+{
+  "name": "company-employees",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build:css": "tailwindcss -i ./styles/input.css -o ./styles/output.css",
+    "watch:css": "tailwindcss -i ./styles/input.css -o ./styles/output.css --watch",
+    "serve": "http-server . -p 8080 --cors -c-1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikop36/company-employees.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/nikop36/company-employees/issues"
+  },
+  "homepage": "https://github.com/nikop36/company-employees#readme",
+  "dependencies": {
+    "angular": "^1.8.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.0",
+    "http-server": "^14.1.1",
+    "tailwindcss": "^4.3.0"
+  }
+}
