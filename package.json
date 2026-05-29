@@ -1,7 +1,7 @@
 {
   "name": "company-employees",
   "version": "1.0.0",
-  "description": "",
+  "description": "AngularJS 1.x company employees app — job interview test",
   "scripts": {
     "build:css": "tailwindcss -i ./styles/input.css -o ./styles/output.css",
     "watch:css": "tailwindcss -i ./styles/input.css -o ./styles/output.css --watch",
@@ -12,7 +12,7 @@
     "url": "git+https://github.com/nikop36/company-employees.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "nikop36",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {

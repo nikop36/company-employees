@@ -2,17 +2,17 @@
      The parent ng-if="selectedUser" in index.html controls its lifecycle. -->
 <popup title="User details" is-open="true" on-close="$ctrl.onClose()">
   <div class="grid grid-cols-3 gap-4 mb-5">
-    <div>
+    <div class="min-w-0">
       <div class="text-xs text-gray-500 mb-1">Username</div>
-      <div class="font-semibold text-gray-800">{{ $ctrl.user.username }}</div>
+      <div class="font-semibold text-gray-800 truncate">{{ $ctrl.user.username }}</div>
     </div>
-    <div>
+    <div class="min-w-0">
       <div class="text-xs text-gray-500 mb-1">Name</div>
-      <div class="font-semibold text-gray-800">{{ $ctrl.user.name }}</div>
+      <div class="font-semibold text-gray-800 truncate">{{ $ctrl.user.name }}</div>
     </div>
-    <div>
+    <div class="min-w-0">
       <div class="text-xs text-gray-500 mb-1">Email</div>
-      <div class="font-semibold text-gray-800">{{ $ctrl.user.email }}</div>
+      <div class="font-semibold text-gray-800 truncate" title="{{ $ctrl.user.email }}">{{ $ctrl.user.email }}</div>
     </div>
   </div>
   <div class="grid grid-cols-2 gap-4 mb-5">

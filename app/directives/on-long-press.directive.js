@@ -18,6 +18,9 @@ angular.module('employeeApp')
 
         $element.on('mousedown touchstart', startPress);
         $element.on('mouseup mouseleave touchend touchcancel', cancelPress);
+        // Note: a completed long-press still fires a click event afterwards,
+        // which triggers ng-click (selectUser). This is intentional — the spec
+        // only requires a console.log on long-press; click suppression is not required.
 
         $scope.$on('$destroy', function() {
           $timeout.cancel(pressTimer);
